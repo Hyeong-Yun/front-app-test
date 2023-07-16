@@ -45,7 +45,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: Hyeong-Yun/k8s-manifest-repo
-          ref: master
+          ref: main
           token: ${{ secrets.MY_GITHUB_TOKEN }}
           path: k8s-manifest-repo
 
@@ -64,4 +64,4 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git config --global user.name "github-actions"
           git commit -am "Update image tag"
-          git push origin master
+          git push origin main
